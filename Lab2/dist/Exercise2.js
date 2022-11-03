@@ -6,7 +6,6 @@ bankAccount = {
         this.money += value;
     }
 };
-console.log(typeof bankAccount);
 let myself;
 myself = {
     name: "John",

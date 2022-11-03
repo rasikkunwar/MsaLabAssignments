@@ -8,10 +8,10 @@ let bankAccount:{
 		this.money += value; 
 	} 
 }; 
-console.log(typeof bankAccount);
+
 let myself:{
     name:string,
-    bankAccount:any,
+    bankAccount:typeof bankAccount,
     hobbies:Array<string>
 }
  myself = { 
