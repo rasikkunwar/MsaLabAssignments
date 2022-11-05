@@ -26,6 +26,7 @@ function foo(msg) {
 subject.on('eat', foo);
 subject.on('study', foo);
 
+console.log(subject.observers)
 subject.emit('eat', 'Corn');
 //output for Line above: subject.emit('eat', 'Corn');
 // Corn
