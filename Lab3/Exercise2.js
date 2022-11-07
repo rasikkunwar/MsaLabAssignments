@@ -1,5 +1,5 @@
 class Subject{
-    observers = [];
+    observers = {};
     on = (event,fn) => {
         if(this.observers[event]){
             this.observers[event].push(fn);
