@@ -10,7 +10,7 @@ const fibonacciModule = (function(){
                     return n;
                 }
                 data[n] = this.calcFibonacci(n - 1) + this.calcFibonacci(n - 2);
-                return this.calcFibonacci(n - 1) + this.calcFibonacci(n - 2);
+                return data[n];
             }
         }
     }
