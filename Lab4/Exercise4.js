@@ -8,7 +8,8 @@ const fibonacciModule = (function(){
             }
             else {
                 if (n <= 1) {
-                    return n;
+                    data[n] = n
+                    return data[n];
                 }
                 data[n] = this.calcFibonacci(n - 1) + this.calcFibonacci(n - 2);
                 return data[n];
