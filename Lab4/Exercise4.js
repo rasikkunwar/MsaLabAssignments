@@ -1,6 +1,7 @@
 const fibonacciModule = (function(){
-    let data = [];
+    let data = {}
     return {
+        data,
         calcFibonacci(n){
             if (data[n]) {
                 return data[n];
@@ -26,7 +27,7 @@ function fibonacci2(n) {
 console.time("Memoized version calculation: ")
 console.log(fibonacciModule.calcFibonacci(45));
 console.timeEnd("Memoized version calculation: ")
-
+console.log(fibonacciModule.data);
 console.time("Not Memoized version calculation: ")
 console.log(fibonacci2(45));
 console.timeEnd("Not Memoized version calculation: ")
