@@ -2,7 +2,8 @@ const shoppingCart = (function(){
     let basket = [];
     return{
         upsertItem(item){
-            if(!basket.includes(item)){
+            let index = basket.findIndex(obj => obj.id === item.id);
+            if(index < 0){
                 basket.push(item);
             }
             else{
