@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display:flex;justify-content:space-evenly">
+        <img id="img1" src="flower1.jpeg"alt="Flower_1" height="300px"/>
+        <img id="img2" src="flower2.jpeg" alt="Flower_2" height="300px"/>
+    </div>
+    <div class="btn" style="display: flex;justify-content:center;margin-top: 30px;">
+        <button id="btnClick" style="background-color:#009688;color:white;font-size:30px;border-radius: 5px;cursor:pointer">Swap</button>
+    </div>
+
+    <script type="text/javascript">
+        const btn = document.getElementById("btnClick");
+        const img1 = document.getElementById("img1");
+        const img2 = document.getElementById("img2");
+        btn.addEventListener("click",function(){
+            const img1Src = img1.src;
+            img1.src = img2.src;
+            img2.src = img1Src;
+        });
+    </script>
+</body>
+</html>

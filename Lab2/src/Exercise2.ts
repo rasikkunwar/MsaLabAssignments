@@ -1,9 +1,9 @@
 let bankAccount:{
-    money:number,
+    money:number
     deposit(value:number):void
 }
  bankAccount = { 
-	money: 2000, 
+	money: 2000,
 	deposit(value) { 
 		this.money += value; 
 	} 
