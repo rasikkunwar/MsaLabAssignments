@@ -76,15 +76,16 @@
         submitBtn1.addEventListener("click", function (event) {
             const val1 = parseInt(input1.value);
             const val2 = parseInt(input2.value);
-            if (val1 === null && val2 === null) {
+            console.log(val1);
+            if (isNaN(val1) && isNaN(val2)) {
                 alert("Please enter value for first and second number");
                 return false;
             }
-            else if (val1 ===null) {
+            else if (isNaN(val1)) {
                 alert("Please enter value for first number");
                 return false;
             }
-            else if (val2 === null) {
+            else if (isNaN(val2)) {
                 alert("Please enter value for second number");
                 return false;
             }
@@ -103,15 +104,15 @@
         submitBtn2.addEventListener("click", function (event) {
             const val1 = parseInt(input21.value);
             const val2 = parseInt(input22.value);
-            if (val1 === null && val2 === null) {
+            if (isNaN(val1) && isNaN(val2)) {
                 alert("Please enter value for first and second number");
                 return false;
             }
-            else if (val1 ===null) {
+            else if (isNaN(val1)) {
                 alert("Please enter value for first number");
                 return false;
             }
-            else if (val2 === null) {
+            else if (isNaN(val2)) {
                 alert("Please enter value for second number");
                 return false;
             }
