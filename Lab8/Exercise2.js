@@ -1,6 +1,6 @@
 Array.prototype.removeDuplicatesAsync = async function () {
     let data = this;
-    let resutl = console.log(await [...new Set(data)]);
+    console.log(await [...new Set(data)]);
 }
 
 console.log(`start`);
